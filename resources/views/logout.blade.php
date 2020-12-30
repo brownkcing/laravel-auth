@@ -23,7 +23,7 @@
     <div class="signup-form">	
         <form action="{{url('post-login')}}" method="POST" id="logForm">
             {{ csrf_field() }}
-            <h2>Login Account</h2>
+            <h2>Welcome </h2>
             <div class="form-group">
                 <div class="input-group">
                     <span class="input-group-addon"><i class="fa fa-paper-plane"></i></span>
