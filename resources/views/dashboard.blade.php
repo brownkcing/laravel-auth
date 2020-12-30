@@ -21,14 +21,14 @@
 </head>
 <body>
     <div class="signup-form">	
-        <div id="logForm">
+        <form action="{{url('logout')}}" method="GET" id="logForm">
             <h2>Welcome {{ ucfirst(Auth()->user()->name) }}</h2>
+            <p>This is your dashboard</p>
             <div class="form-group">
-                <button type="submit" class="btn btn-primary btn-block btn-lg">Login</button>
+                <button type="submit" class="btn btn-primary btn-block btn-lg">logout</button>
             </div>
-            <p class="small text-center">By clicking the Sign Up button, you agree to our <br><a href="#">Terms &amp; Conditions</a>, and <a href="#">Privacy Policy</a>.</p>
+            <p class="small text-center"><a href="#">Terms &amp; Conditions</a>, and <a href="#">Privacy Policy</a>.</p>
         </div>
-        <div class="text-center">Don't have an account? <a href="{{url('registration')}}">Sign Up here</a>.</div>
-    </div>
+    </form>
 </body>
 </html>
