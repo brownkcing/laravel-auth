@@ -23,9 +23,9 @@
     <div class="signup-form">	
         <form action="{{url('logout')}}" method="GET" id="logForm">
             <h2>Welcome {{ ucfirst(Auth()->user()->name) }}</h2>
-            <p>This is your dashboard</p>
+            <p class="lead">This is your dashboard</p>
             <div class="form-group">
-                <button type="submit" class="btn btn-primary btn-block btn-lg">logout</button>
+                <button type="submit" class="btn btn-primary btn-block btn-lg">Log out</button>
             </div>
             <p class="small text-center"><a href="#">Terms &amp; Conditions</a>, and <a href="#">Privacy Policy</a>.</p>
         </div>
